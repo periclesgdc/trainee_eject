@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		document.addEventListener("mousemove", function(evento) {
+			document.getElementById('predios').style.backgroundPosition = (50 + 20*((evento.pageX/window.innerWidth) - 0.5)).toString()+'% 50%'
+			document.getElementById('casas').style.backgroundPosition = (50 + 50*((evento.pageX/window.innerWidth) - 0.5)).toString()+'% 50%'
+			document.getElementById('postes').style.backgroundPosition = (50 + 100*((evento.pageX/window.innerWidth) - 0.5)).toString()+'% 50%'
+		});
+	</script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Parallax</title>
+</head>
+<body>
+	<div id="container">
+		<div class="images" id="nuvens"></div>
+		<div class="images" id="predios"></div>
+		<div class="images" id="casas"></div>
+		<div class="images" id="postes"></div>
+	</div>
+</body>
+</html>
